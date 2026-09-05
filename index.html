@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ÉLAN – Contemporary Fine Dining. An extraordinary taste of elegance. Reserve your table today." />
+  <title>ÉLAN – An Extraordinary Taste of Elegance</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ PRELOADER ═══ -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-logo">BANNY</div>
+      <div class="preloader-line-track">
+        <div class="preloader-line"></div>
+      </div>
+      <div class="preloader-tagline">An Extraordinary Taste of Elegance</div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ NAVIGATION ═══ -->
+  <header id="site-header" role="banner">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="#home" class="nav-logo" aria-label="ÉLAN – go to homepage">VARMA</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-outline nav-reserve">Reserve a Table</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="#home"       class="mobile-nav-link" data-index="1">Home</a></li>
+        <li><a href="#about"      class="mobile-nav-link" data-index="2">About</a></li>
+        <li><a href="#menu"       class="mobile-nav-link" data-index="3">Menu</a></li>
+        <li><a href="#experience" class="mobile-nav-link" data-index="4">Experience</a></li>
+        <li><a href="#gallery"    class="mobile-nav-link" data-index="5">Gallery</a></li>
+        <li><a href="#contact"    class="mobile-nav-link" data-index="6">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-gold mobile-reserve">Reserve a Table</a>
+    </div>
+    <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO ═══ -->
+    <section id="home" class="hero" aria-label="Hero">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=85&auto=format&fit=crop"
+          alt="Elegant fine dining table setting with candlelight"
+          class="hero-image"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <span class="label hero-label reveal-up">Contemporary Fine Dining</span>
+        <h1 class="hero-heading">
+          <span class="hero-line reveal-line" style="--delay:0.1s">Where Flavor</span>
+          <span class="hero-line reveal-line" style="--delay:0.3s">Becomes Art</span>
+        </h1>
+        <p class="hero-desc reveal-up" style="--delay:0.55s">
+          An intimate dining experience where seasonal ingredients,<br class="br-desktop" />
+          refined technique, and timeless hospitality meet.
+        </p>
+        <div class="hero-actions reveal-up" style="--delay:0.75s">
+          <a href="#contact" class="btn btn-gold">Reserve a Table</a>
+          <a href="#menu"    class="btn btn-outline">Explore Menu</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="scroll-text">Scroll</span>
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ ABOUT ═══ -->
+    <section id="about" class="about section-pad" aria-label="About ÉLAN">
+      <div class="container about-grid">
+
+        <div class="about-left">
+          <div class="about-story-label">
+            <span class="gold-bar"></span>
+            <span class="label">Our Story</span>
+          </div>
+          <h2 class="about-heading animate-reveal">
+            A celebration of<br />taste, craft &amp;<br />tradition.
+          </h2>
+          <a href="#experience" class="btn btn-text">Discover More <span class="arrow">→</span></a>
+        </div>
+
+        <div class="about-right">
+          <p class="about-body animate-reveal" style="--delay:0.15s">
+            Born from a passion for exceptional cuisine and genuine hospitality,
+            ÉLAN was founded with a single ambition: to create moments that linger
+            long after the last course. Our kitchen honours the provenance of every
+            ingredient, forging deep relationships with local farms, artisan producers,
+            and sustainable fisheries.
+          </p>
+          <p class="about-body animate-reveal" style="--delay:0.3s">
+            Each season brings a reinvented menu — a living canvas shaped by what
+            the land and sea offer at their finest. We believe that true luxury is
+            not found in excess, but in precision, restraint, and the quiet joy of
+            a perfectly realised dish.
+          </p>
+
+          <div class="about-image-wrap animate-reveal" style="--delay:0.45s">
+            <div class="image-mask">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80&auto=format&fit=crop"
+                alt="Artistically plated fine dining dish"
+                loading="lazy"
+                class="about-img"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ SIGNATURE DISHES ═══ -->
+    <section id="signature" class="signature section-pad" aria-label="Signature dishes">
+      <div class="container">
+        <div class="section-header">
+          <span class="label animate-reveal">From Our Kitchen</span>
+          <h2 class="section-title animate-reveal" style="--delay:0.1s">Signature Creations</h2>
+          <p class="section-sub animate-reveal" style="--delay:0.2s">A glimpse into the ÉLAN experience.</p>
+        </div>
+
+        <div class="dishes-grid">
+
+          <article class="dish-card animate-reveal" style="--delay:0.05s" aria-label="Truffle Tagliolini">
+            <div class="dish-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=800&q=80&auto=format&fit=crop"
+                alt="Truffle Tagliolini pasta dish with shaved black truffle"
+                loading="lazy"
+                class="dish-img"
+              />
+              <div class="dish-overlay">
+                <span class="dish-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category label">Pasta</span>
+              <h3 class="dish-name">Truffle Tagliolini</h3>
+              <p class="dish-desc">Hand-rolled egg pasta, black truffle, aged Parmigiano, brown butter emulsion.</p>
+              <span class="dish-price">£38</span>
+            </div>
+          </article>
+
+          <article class="dish-card animate-reveal" style="--delay:0.15s" aria-label="Ember-Roasted Sea Bass">
+            <div class="dish-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=800&q=80&auto=format&fit=crop"
+                alt="Ember-roasted sea bass fillet with herb garnish"
+                loading="lazy"
+                class="dish-img"
+              />
+              <div class="dish-overlay">
+                <span class="dish-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category label">Seafood</span>
+              <h3 class="dish-name">Ember-Roasted Sea Bass</h3>
+              <p class="dish-desc">Line-caught sea bass, smoked bone marrow, samphire, lemon verbena beurre blanc.</p>
+              <span class="dish-price">£52</span>
+            </div>
+          </article>
+
+          <article class="dish-card animate-reveal" style="--delay:0.25s" aria-label="Dark Chocolate Soufflé">
+            <div class="dish-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80&auto=format&fit=crop"
+                alt="Dark chocolate soufflé with gold dusting"
+                loading="lazy"
+                class="dish-img"
+              />
+              <div class="dish-overlay">
+                <span class="dish-overlay-icon" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category label">Dessert</span>
+              <h3 class="dish-name">Dark Chocolate Soufflé</h3>
+              <p class="dish-desc">Valrhona 72% soufflé, Madagascan vanilla ice cream, cocoa nib tuile.</p>
+              <span class="dish-price">£18</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ MENU ═══ -->
+    <section id="menu" class="menu-section section-pad" aria-label="Full menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="label animate-reveal">The Menu</span>
+          <h2 class="section-title animate-reveal" style="--delay:0.1s">Curated for Every Occasion</h2>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab-btn active" role="tab" aria-selected="true"  aria-controls="tab-starters"  data-tab="starters" >Starters</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="tab-mains"    data-tab="mains"    >Mains</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="tab-desserts" data-tab="desserts" >Desserts</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="tab-drinks"   data-tab="drinks"   >Drinks</button>
+        </div>
+
+        <!-- STARTERS -->
+        <div class="tab-panel active" id="tab-starters" role="tabpanel">
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Oyster, Cucumber &amp; Champagne Foam</h4>
+                <p class="menu-item-desc">Carlingford oysters, pickled cucumber, Pol Roger foam, caviar pearls.</p>
+              </div>
+              <span class="menu-item-price">£22</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Cured Salmon Crudo</h4>
+                <p class="menu-item-desc">Applewood-smoked salmon, dashi jelly, yuzu emulsion, dill oil.</p>
+              </div>
+              <span class="menu-item-price">£19</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Burrata &amp; Heritage Tomatoes</h4>
+                <p class="menu-item-desc">Pugliese burrata, heirloom tomatoes, aged balsamic, basil coulis.</p>
+              </div>
+              <span class="menu-item-price">£16</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Foie Gras Terrine</h4>
+                <p class="menu-item-desc">Torchon of foie gras, Sauternes jelly, brioche, Granny Smith apple.</p>
+              </div>
+              <span class="menu-item-price">£28</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAINS -->
+        <div class="tab-panel" id="tab-mains" role="tabpanel" hidden>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Truffle Tagliolini</h4>
+                <p class="menu-item-desc">Hand-rolled egg pasta, black truffle, aged Parmigiano, brown butter emulsion.</p>
+              </div>
+              <span class="menu-item-price">£38</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Ember-Roasted Sea Bass</h4>
+                <p class="menu-item-desc">Line-caught sea bass, smoked bone marrow, samphire, lemon verbena beurre blanc.</p>
+              </div>
+              <span class="menu-item-price">£52</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Dry-Aged Côte de Boeuf</h4>
+                <p class="menu-item-desc">45-day aged rib, bone marrow jus, truffle pomme purée, rainbow chard.</p>
+              </div>
+              <span class="menu-item-price">£68</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Wild Mushroom Risotto</h4>
+                <p class="menu-item-desc">Carnaroli rice, porcini, chanterelle, truffle oil, aged Pecorino.</p>
+              </div>
+              <span class="menu-item-price">£34</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="tab-panel" id="tab-desserts" role="tabpanel" hidden>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Dark Chocolate Soufflé</h4>
+                <p class="menu-item-desc">Valrhona 72% soufflé, Madagascan vanilla ice cream, cocoa nib tuile.</p>
+              </div>
+              <span class="menu-item-price">£18</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Crème Brûlée</h4>
+                <p class="menu-item-desc">Tonka bean custard, caramelised sugar, seasonal berry compote.</p>
+              </div>
+              <span class="menu-item-price">£14</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Lemon Tart Parfait</h4>
+                <p class="menu-item-desc">Amalfi lemon curd, Italian meringue, freeze-dried raspberry, shortbread crumble.</p>
+              </div>
+              <span class="menu-item-price">£15</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Cheese Selection</h4>
+                <p class="menu-item-desc">Five artisan cheeses, house chutney, seed crackers, quince paste.</p>
+              </div>
+              <span class="menu-item-price">£22</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="tab-panel" id="tab-drinks" role="tabpanel" hidden>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Pol Roger Blanc de Blancs</h4>
+                <p class="menu-item-desc">Champagne, France – crisp, mineral, fine mousse.</p>
+              </div>
+              <span class="menu-item-price">£22 / glass</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Château Margaux 2018</h4>
+                <p class="menu-item-desc">Bordeaux, France – deep, structured, remarkable length.</p>
+              </div>
+              <span class="menu-item-price">£340 / bottle</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">ÉLAN Signature Martini</h4>
+                <p class="menu-item-desc">Grey Goose, dry vermouth, lemon oil, gold-leaf garnish.</p>
+              </div>
+              <span class="menu-item-price">£18</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4 class="menu-item-name">Japanese Whisky Flight</h4>
+                <p class="menu-item-desc">Hibiki Harmony, Yamazaki 12, Nikka Coffey Grain – 20ml each.</p>
+              </div>
+              <span class="menu-item-price">£54</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CINEMATIC FULLWIDTH ═══ -->
+    <section class="cinematic-section" aria-label="ÉLAN dining atmosphere">
+      <div class="cinematic-bg" id="cinematic-bg">
+        <img
+          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1920&q=85&auto=format&fit=crop"
+          alt="Luxury restaurant interior with warm ambient lighting"
+          loading="lazy"
+          class="cinematic-img"
+        />
+        <div class="cinematic-overlay"></div>
+      </div>
+      <div class="cinematic-text animate-reveal">
+        <blockquote class="cinematic-quote">"Every detail matters."</blockquote>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ EXPERIENCE ═══ -->
+    <section id="experience" class="experience section-pad" aria-label="The ÉLAN experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="label animate-reveal">The ÉLAN Way</span>
+          <h2 class="section-title animate-reveal" style="--delay:0.1s">An Uncompromising Standard</h2>
+        </div>
+
+        <div class="experience-grid">
+
+          <div class="exp-block animate-reveal" style="--delay:0.05s">
+            <span class="exp-number" aria-hidden="true">01</span>
+            <h3 class="exp-title">Seasonal Ingredients</h3>
+            <p class="exp-desc">We build every menu around what nature offers at its peak — forged through partnerships with the finest local producers.</p>
+          </div>
+
+          <div class="exp-block animate-reveal" style="--delay:0.15s">
+            <span class="exp-number" aria-hidden="true">02</span>
+            <h3 class="exp-title">Artful Technique</h3>
+            <p class="exp-desc">Classical foundations and modern precision converge in a kitchen where every movement is intentional and every flavour considered.</p>
+          </div>
+
+          <div class="exp-block animate-reveal" style="--delay:0.25s">
+            <span class="exp-number" aria-hidden="true">03</span>
+            <h3 class="exp-title">Intimate Atmosphere</h3>
+            <p class="exp-desc">Thirty covers only. Each table is a private world — candlelit, unhurried, designed for conversation and connection.</p>
+          </div>
+
+          <div class="exp-block animate-reveal" style="--delay:0.35s">
+            <span class="exp-number" aria-hidden="true">04</span>
+            <h3 class="exp-title">Exceptional Hospitality</h3>
+            <p class="exp-desc">Our team anticipates before you ask. Gracious, knowledgeable, and invisibly present — service as a quiet art form.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CHEF ═══ -->
+    <section id="chef" class="chef section-pad" aria-label="Meet the chef">
+      <div class="container chef-grid">
+
+        <div class="chef-image-wrap animate-reveal">
+          <div class="image-mask chef-mask">
+            <img
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=900&q=80&auto=format&fit=crop"
+              alt="Executive Chef Alexander Laurent in the kitchen"
+              loading="lazy"
+              class="chef-img"
+            />
+          </div>
+        </div>
+
+        <div class="chef-content">
+          <div class="about-story-label animate-reveal">
+            <span class="gold-bar"></span>
+            <span class="label">Meet the Chef</span>
+          </div>
+          <h2 class="chef-name animate-reveal" style="--delay:0.1s">Alexander<br />Laurent</h2>
+          <p class="chef-bio animate-reveal" style="--delay:0.2s">
+            With two decades spanning the kitchens of Paris, Tokyo, and Copenhagen,
+            Chef Laurent brings an extraordinary range of influence to every plate.
+            Trained at the Institut Paul Bocuse and mentored by three Michelin-starred
+            chefs, he distils the world's great culinary traditions into something
+            entirely his own — restrained, soulful, and breathtakingly precise.
+          </p>
+          <p class="chef-bio animate-reveal" style="--delay:0.3s">
+            At ÉLAN, he leads a small, devoted brigade committed to one belief:
+            that a great meal is a form of poetry — written in aroma, texture,
+            and the lingering memory of a single perfect bite.
+          </p>
+          <blockquote class="chef-signature animate-reveal" style="--delay:0.4s">
+            "Cooking is the art of transforming memory into flavor."
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ GALLERY ═══ -->
+    <section id="gallery" class="gallery section-pad" aria-label="Photo gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="label animate-reveal">Visual Journey</span>
+          <h2 class="section-title animate-reveal" style="--delay:0.1s">A Feast for the Eyes</h2>
+        </div>
+
+        <div class="masonry-grid">
+          <button class="gallery-item animate-reveal" style="--delay:0.05s" aria-label="View image: Artisan bread and butter">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=700&q=80&auto=format&fit=crop" alt="Gourmet plated beef dish on dark slate" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item tall animate-reveal" style="--delay:0.1s" aria-label="View image: Luxury restaurant interior">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=80&auto=format&fit=crop" alt="Warm luxury restaurant interior with mood lighting" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item animate-reveal" style="--delay:0.15s" aria-label="View image: Fresh seafood dish">
+            <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?w=700&q=80&auto=format&fit=crop" alt="Elegant seafood dish with microgreens" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item animate-reveal" style="--delay:0.2s" aria-label="View image: Wine service">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=700&q=80&auto=format&fit=crop" alt="Sommelier pouring fine wine into crystal glass" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item tall animate-reveal" style="--delay:0.25s" aria-label="View image: Chef at work">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=700&q=80&auto=format&fit=crop" alt="Chef carefully plating a fine dining dish" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item animate-reveal" style="--delay:0.3s" aria-label="View image: Dessert presentation">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700&q=80&auto=format&fit=crop" alt="Delicate chocolate dessert with gold leaf" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item animate-reveal" style="--delay:0.35s" aria-label="View image: Table setting">
+            <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=700&q=80&auto=format&fit=crop" alt="Elegant candlelit dining table with fine linen" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+          <button class="gallery-item animate-reveal" style="--delay:0.4s" aria-label="View image: Fresh ingredients">
+            <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=700&q=80&auto=format&fit=crop" alt="Fresh seasonal ingredients artfully arranged" loading="lazy" />
+            <div class="gallery-overlay"><span class="gallery-icon" aria-hidden="true">+</span></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#8592;</button>
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next image">&#8594;</button>
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ TESTIMONIALS ═══ -->
+    <section id="testimonials" class="testimonials section-pad" aria-label="Guest testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="label animate-reveal">Guest Reviews</span>
+          <h2 class="section-title animate-reveal" style="--delay:0.1s">Words from Our Guests</h2>
+        </div>
+
+        <div class="carousel" aria-live="polite" aria-atomic="true">
+          <div class="carousel-track" id="carousel-track">
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 1 of 4">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <blockquote class="testimonial-text">
+                From the moment we arrived, we knew the evening would be extraordinary. The truffle tagliolini alone justified the journey from London. ÉLAN is a masterclass in restraint and precision.
+              </blockquote>
+              <cite class="testimonial-author">
+                <span class="author-name">Charlotte &amp; James W.</span>
+                <span class="author-location">London, United Kingdom</span>
+              </cite>
+            </div>
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 2 of 4">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <blockquote class="testimonial-text">
+                Chef Laurent has an extraordinary gift — each dish told a story. The sea bass was the finest piece of fish I have ever eaten. ÉLAN transcends the idea of a restaurant; it is an experience.
+              </blockquote>
+              <cite class="testimonial-author">
+                <span class="author-name">Marco Di Luca</span>
+                <span class="author-location">Milan, Italy</span>
+              </cite>
+            </div>
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 3 of 4">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <blockquote class="testimonial-text">
+                We celebrated our anniversary here, and I cannot imagine a more perfect setting. The service was invisible yet ever-present — a rare quality. We will return again and again.
+              </blockquote>
+              <cite class="testimonial-author">
+                <span class="author-name">Élodie Moreau</span>
+                <span class="author-location">Paris, France</span>
+              </cite>
+            </div>
+
+            <div class="testimonial-slide" role="group" aria-label="Testimonial 4 of 4">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <blockquote class="testimonial-text">
+                I have dined in Michelin-starred restaurants across three continents, and ÉLAN stands apart. The chocolate soufflé was transcendent. This is what fine dining should always feel like.
+              </blockquote>
+              <cite class="testimonial-author">
+                <span class="author-name">Hiroshi Tanaka</span>
+                <span class="author-location">Tokyo, Japan</span>
+              </cite>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Testimonial navigation"></div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ RESERVATION CTA ═══ -->
+    <section class="cta-section" aria-label="Make a reservation">
+      <div class="cta-bg">
+        <img
+          src="https://images.unsplash.com/photo-1482275548304-a58859dc31b7?w=1920&q=85&auto=format&fit=crop"
+          alt="Intimate restaurant dining room at night"
+          loading="lazy"
+          class="cta-img"
+        />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="cta-content animate-reveal">
+        <span class="label cta-label">Reservations</span>
+        <h2 class="cta-heading">Your table awaits.</h2>
+        <p class="cta-sub">Join us for an evening of unforgettable flavours.</p>
+        <a href="#contact" class="btn btn-gold cta-btn">Reserve Your Table</a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CONTACT ═══ -->
+    <section id="contact" class="contact section-pad" aria-label="Contact and reservations">
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <div class="about-story-label animate-reveal">
+            <span class="gold-bar"></span>
+            <span class="label">Find Us</span>
+          </div>
+          <h2 class="contact-heading animate-reveal" style="--delay:0.1s">Get in Touch</h2>
+
+          <div class="info-block animate-reveal" style="--delay:0.2s">
+            <span class="info-label label">Address</span>
+            <p class="info-value">12 Belgravia Square<br />London, SW1X 8PQ</p>
+          </div>
+          <div class="info-block animate-reveal" style="--delay:0.25s">
+            <span class="info-label label">Phone</span>
+            <p class="info-value"><a href="tel:+442071234567" class="info-link">+44 (0) 207 123 4567</a></p>
+          </div>
+          <div class="info-block animate-reveal" style="--delay:0.3s">
+            <span class="info-label label">Email</span>
+            <p class="info-value"><a href="mailto:reservations@elan-restaurant.com" class="info-link">reservations@elan-restaurant.com</a></p>
+          </div>
+          <div class="info-block animate-reveal" style="--delay:0.35s">
+            <span class="info-label label">Opening Hours</span>
+            <p class="info-value">
+              Tuesday – Saturday<br />
+              Lunch: 12:00 – 14:30<br />
+              Dinner: 18:30 – 22:00
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap animate-reveal" style="--delay:0.2s">
+          <form class="reservation-form" id="reservation-form" novalidate aria-label="Reservation form">
+            <h3 class="form-title">Reserve a Table</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-name" class="form-label">Full Name</label>
+                <input type="text" id="f-name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="f-email" class="form-label">Email Address</label>
+                <input type="email" id="f-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="f-date" class="form-label">Date</label>
+                <input type="date" id="f-date" name="date" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label for="f-time" class="form-label">Time</label>
+                <select id="f-time" name="time" class="form-input form-select" required>
+                  <option value="" disabled selected>Select time</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="f-guests" class="form-label">Number of Guests</label>
+              <select id="f-guests" name="guests" class="form-input form-select" required>
+                <option value="" disabled selected>Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7+">7+ Guests (please call)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="f-message" class="form-label">Special Requests</label>
+              <textarea id="f-message" name="message" class="form-input form-textarea" placeholder="Dietary requirements, occasions, or any special requests…" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold form-submit">Confirm Reservation</button>
+            <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+              <span>&#10003;</span> Thank you. We look forward to welcoming you.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo" aria-label="ÉLAN – back to top">ÉLAN</a>
+      <p class="footer-tagline">An Extraordinary Taste of Elegance</p>
+      <nav class="footer-social" aria-label="Social media links">
+        <a href="#" class="footer-social-link" aria-label="Follow us on Instagram" rel="noopener">Instagram</a>
+        <a href="#" class="footer-social-link" aria-label="Follow us on Facebook" rel="noopener">Facebook</a>
+        <a href="#" class="footer-social-link" aria-label="View us on TripAdvisor" rel="noopener">TripAdvisor</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 ÉLAN. All rights reserved.</p>
+    </div>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <span class="btt-arrow" aria-hidden="true">↑</span>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

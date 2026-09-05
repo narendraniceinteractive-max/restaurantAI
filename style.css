@@ -271,15 +271,27 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .nav-logo {
-  font-family: var(--ff-serif);
-  font-size: 1.7rem;
-  font-weight: 400;
-  letter-spacing: 0.28em;
-  color: var(--color-ivory);
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
-  transition: color 0.3s;
+  transition: opacity 0.3s;
 }
-.nav-logo:hover { color: var(--color-gold); }
+.nav-logo:hover { opacity: 0.8; }
+
+.logo-svg {
+  height: 38px;
+  width: auto;
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.logo-svg--preloader {
+  height: 60px;
+}
+
+.logo-svg--footer {
+  height: 42px;
+}
 
 .nav-links {
   display: flex;
